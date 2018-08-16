@@ -33,118 +33,80 @@ html {
     font-size: medium;
     font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif, "微軟正黑體", "Microsoft JhengHei";
 
-    background: $mainBackgroundColor;
-    background-image: $mainBackgroundImage;
+    // background: $mainBackgroundColor;
+    // background-image: $mainBackgroundImage;
 
     @include font-smoothing(antialiased);
   }
 }
 
 
-
-
-
 .boxs {
   display: inline-block;
-  width: 1000px;
-  margin: 0 auto;
+  width: 500px;
+  margin-top: 40px;
+  padding: 20px;
+  @include clearfix();
 
-  @include split-left(400px, '.lboxs', '.rboxs');
-
-  .lboxs {
-    padding-right: 50px;
-
-    .lbox {
-      display: inline-block;
-      width: 100%;
-      padding: 30px 10px;
-
-      @include clearfix();
-
-      .in1, .in2, button {
-        display: inline-block;
-        width: 70%;
-        float: left;
-        background-color: rgba(238, 238, 238, 1.00);
-        padding: 10px 20px;
-        color: rgba(41, 38, 46, 1.00);
-        font-weight: 600;
-        outline: 0;
-        border: 0;
-        @include border-radius(3px);
-        font-size: 1em;
-        margin-bottom: 10px;
-      }
-
-      button {
-        cursor: pointer;
-        display: inline-block;
-        float: right;
-        padding: 10px 20px;
-        outline: 0;
-        border: 0;
-        color: rgba(41, 38, 46, 1.00);
-        font-weight: 600;
-        background-color: rgba(103, 199, 185, 1.00);
-        @include transition(color .3s);
-        
-        &:hover {
-          background-color: rgba(103, 199, 185, .5);
-        }
-      }
-    }
+  input {
+    display: inline-block;
+    width: 160px;
+    float: left;
+    margin: 0 10px 20px 0;
+    background-color: rgba(208, 208, 208, 1.00);
+    color: rgba(39, 40, 34, 1.00);
+    font-size: 16px;
+    font-weight: 600;
+    padding: 5px 10px;
+    @include border-radius(3px);
+    outline: 0;
+    border: 0;
   }
 
-  .rboxs {
-    padding-top: 20px; 
-    height: 100px;
-
-    .rbox {
-      display: inline-block;
-      width: 100%;
-      padding: 15px;
-      background-color: rgba(240, 240, 240, .5);
-
-      + .rbox {
-        margin-top: 10px;
-      }
-
-      @include split-left(70%, 'p', 'a');
-
-      a, p {
-        display: inline-block;
-        font-size: 1em;
-        color: rgba(41, 38, 46, 1.00);
-        cursor: pointer;
-        text-decoration: none;
-      }
-
-      .se {
-        padding: 0;
-        margin: 0;
-        float: left;
-        text-align: left;
-        padding: 10px;
-
-        &:hover {
-          color: rgba(103, 199, 185, 1.00);
-        }
-      }
-
-      a {
-        float: right;
-        padding: 10px 20px;
-        @include border-radius(3px);
-        background-color: rgba(103, 199, 185, 1.00);
-        @include transition(color .3s);
-        
-        &:hover {
-          background-color: rgba(103, 199, 185, .5);
-        }
-      }
-    }
+  button {
+    display: inline-block;
+    width: 120px;
+    outline: 0;
+    @include border-radius(3px);
+    padding: 3px 0;
+    background-color: rgba(148, 116, 71, 1.00);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border: 0;
+    cursor: pointer;
   }
 
+  .a3 {
+    display: inline-block;
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    background-color: rgba(208, 208, 208, 1.00);
+    color: rgba(39, 40, 34, 1.00);
+    font-size: 16px;
+    font-weight: 600;
+    padding: 0 10px;
+    @include border-radius(3px);
+  }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
